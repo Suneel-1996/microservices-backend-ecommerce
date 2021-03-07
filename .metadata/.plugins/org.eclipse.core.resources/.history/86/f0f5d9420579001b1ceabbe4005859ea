@@ -1,0 +1,52 @@
+package com.example.demo.model;
+
+import javax.persistence.Entity;
+
+@Entity(name = "products")
+public class ProductModel {
+	
+	private long id;
+	private String productName;
+	private double productPrice;
+	private String productImageUrl;
+	
+	
+	public ProductModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public ProductModel(long id, String productName, double productPrice, String productImageUrl) {
+		super();
+		this.id = id;
+		this.productName = productName;
+		this.productPrice = productPrice;
+		this.productImageUrl = productImageUrl;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	public double getProductPrice() {
+		return productPrice;
+	}
+	public void setProductPrice(double productPrice) {
+		this.productPrice = productPrice;
+	}
+	public String getProductImageUrl() {
+		return productImageUrl;
+	}
+	public void setProductImageUrl(String productImageUrl) {
+		this.productImageUrl = productImageUrl;
+	}
+	
+	
+
+}

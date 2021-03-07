@@ -1,0 +1,5 @@
+package com.cart.demo.remo;
+
+public interface CategoryRepo {
+
+}

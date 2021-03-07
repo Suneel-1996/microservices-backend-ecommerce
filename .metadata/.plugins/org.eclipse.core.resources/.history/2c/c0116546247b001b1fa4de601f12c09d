@@ -1,0 +1,31 @@
+package com.user.demo.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.user.demo.entity.UserModel;
+import com.user.demo.repository.UserRepo;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+	@Autowired
+	UserRepo userRepo;
+	
+	@RequestMapping("/all-users")
+	public List<UserModel> getAllUsers() {
+		List<UserModel> userList= new ArrayList<UserModel>();
+		try {
+			userList= userRepo.findAll();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return userList;
+	}
+	
+
+}

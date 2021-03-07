@@ -1,0 +1,21 @@
+package com.example.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name="products")
+public class Product {
+	
+	private long id;
+	private String product_code;
+	private String product_name;
+	private String description;
+	private String product_imageURL;
+	private double price;
+	
+
+}

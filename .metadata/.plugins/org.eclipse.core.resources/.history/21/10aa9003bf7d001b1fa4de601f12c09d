@@ -1,0 +1,15 @@
+spring.application.name=fsit-zuul-gateway-service
+server.port=8765
+#cors.urls=http://localhost:4200
+management.endpoints.web.cors.allowed-origins=http://localhost:4200
+management.endpoints.web.cors.allowed-methods=GET,POST,PUT,DELETE
+#zuul.ignored-headers=Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+zuul.routes.cart-service.path=/cart-service/**
+zuul.routes.cart-service.url=http://localhost:8820/
+
+zuul.routes.user-service.path=/user-service/**
+zuul.routes.user-service.url=http://localhost:8810/
+
+zuul.routes.product-service.path=/product-service/**
+zuul.routes.product-service.url=http://localhost:8830/
+

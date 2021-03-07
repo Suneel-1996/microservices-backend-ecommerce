@@ -1,0 +1,3 @@
+spring.application.name=fsit-product-enquiry-service
+server.port=8700
+fsit-product-stock-service.ribbon.listOfServers=http://localhost:8800,http://localhost:8801

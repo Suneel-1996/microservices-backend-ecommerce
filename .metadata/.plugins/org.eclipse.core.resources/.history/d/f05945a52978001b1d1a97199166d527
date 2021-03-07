@@ -1,0 +1,21 @@
+package com.example.demo.entity;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.*;
+
+@Entity
+public class ProductStock {
+
+	@Id
+	private Long id;
+	@Column(name="product_name")
+	private String productName;
+	@Column(name="product_price")
+	private BigDecimal productPrice;
+	@Column(name="product_availability")
+	private String productAvailability;
+	@Column(name="discount_offer")
+	private double discountOffer;
+}

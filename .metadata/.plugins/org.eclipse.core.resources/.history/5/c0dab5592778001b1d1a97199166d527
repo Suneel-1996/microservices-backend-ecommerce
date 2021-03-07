@@ -1,0 +1,12 @@
+package com.example.demo.entity;
+
+import java.math.BigDecimal;
+
+public class ProductStock {
+
+	private Long id;
+	private String productName;
+	private BigDecimal productPrice;
+	private String productAvailability;
+	private double discountOffer;
+}

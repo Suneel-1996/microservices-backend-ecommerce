@@ -1,0 +1,9 @@
+spring.application.name=fsit-property-access-service
+server.port=8100
+spring.cloud.config.enabled=true
+spring.cloud.config.uri=http://localhost:8888
+property-file.name=github-new-changing-one-more-time 
+property-file.description=Github default environment properties
+#spring.devtools.add-properties=false
+management.endpoints.web.exposure.include=refresh
+#spring.profiles.active=dev

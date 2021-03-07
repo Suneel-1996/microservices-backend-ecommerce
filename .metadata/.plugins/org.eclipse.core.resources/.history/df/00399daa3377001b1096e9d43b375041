@@ -1,0 +1,2 @@
+spring.application.name=fsit-property-access-service
+server.port=8100

@@ -1,0 +1,2 @@
+spring.application.name=fsit-spring-cloud-api-gateway-service
+server.port=8900

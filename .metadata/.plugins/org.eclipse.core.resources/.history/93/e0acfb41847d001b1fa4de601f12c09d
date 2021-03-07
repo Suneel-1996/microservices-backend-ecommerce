@@ -1,0 +1,11 @@
+spring.application.name=fsit-zuul-gateway-service
+server.port=8765
+zuul.routes.cart-service.path=/cart-service/**
+zuul.routes.cart-service.url=http://localhost:8820/
+
+zuul.routes.user-service.path=/user-service/**
+zuul.routes.user-service.url=http://localhost:8810/
+
+zuul.routes.product-service.path=/product-service/**
+zuul.routes.product-service.url=http://localhost:8830/
+

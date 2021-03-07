@@ -1,0 +1,3 @@
+spring.application.name=fsit-product-enquiry-service
+server.port=8700
+

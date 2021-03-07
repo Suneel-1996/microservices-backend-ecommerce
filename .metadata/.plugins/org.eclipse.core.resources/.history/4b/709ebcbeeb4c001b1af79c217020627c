@@ -1,0 +1,9 @@
+server.port=8761
+spring.application.name=eureka-server
+spring.datasource.url=jdbc:mysql://localhost:3306/fullstackspring?useSSL=false
+spring.datasource.username=root
+spring.datasource.password=Oct2019*
+spring.jooq.sql-dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+eureka.client.fetch-registry=false
+

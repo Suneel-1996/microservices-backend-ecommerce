@@ -1,0 +1,13 @@
+package com.example.demo.client;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.demo.beans.ProductEnquiryBean;
+
+public interface ProductStockClient {
+
+	@RequestMapping("/check-product-stock/productName/{productName}/productAvailability/{productAvailability}")
+	public ProductEnquiryBean checkProductStock(@PathVariable String productName,
+			@PathVariable String productAvailability);
+}

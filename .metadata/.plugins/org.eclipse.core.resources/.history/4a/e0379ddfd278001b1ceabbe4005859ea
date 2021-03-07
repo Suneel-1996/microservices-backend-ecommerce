@@ -1,0 +1,6 @@
+spring.application.name=fsit-spring-cloud-api-gateway-service
+spring.cloud.gateway.routes[id]=stock-enquiry
+spring.cloud.gateway.routes-id=stock-enquiry
+spring.cloud.gateway.routes-uri=http://localhost:8700/
+spring.cloud.gateway.routes-predicates-path=/product-enquiry/**
+server.port=8900
